@@ -1,0 +1,29 @@
+{
+  "name": "nintenobility-reagent",
+  "version": "1.0.0",
+  "description": "A Twitch bot for Nintenoble's streams",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js",
+    "StartWatch": "nodemon app.js",
+    "db": "mongod --auth --port 27017 --dbpath ./data"
+  },
+  "keywords": [
+    "Nintenoble",
+    "Best_Gamer",
+    "Subscribe_With_Prime"
+  ],
+  "author": "Merek Hailey",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "keysender": "^2.3.0",
+    "mongod": "^2.0.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.21",
+    "tmi.js": "^1.5.0",
+    "winston": "^3.8.2"
+  }
+}

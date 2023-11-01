@@ -1,0 +1,55 @@
+
+# GET ALL PROFILES
+GET http://localhost:8000/api/profiles
+###
+
+# GET ONE PROFILE
+GET http://localhost:8000/api/profiles/Nintenoble
+###
+
+# MAKE NEW PROFILE
+POST http://localhost:8000/api/profiles
+Content-Type: application/json
+
+{
+    "name": "Nintenoble",
+    "twitchUsername": "Nintenoble",
+    "twitchid": 1234567890
+}
+###
+
+# MAKE NEW MAP
+POST http://localhost:8000/api/maps
+###
+
+# MAKE NEW AREA
+POST http://localhost:8000/api/maps/Nennyland/areas
+Content-Type: application/json
+
+{
+    "name": "NL25",
+    "areaId": "NL25",
+    "owner": "Nintenoble",
+    "cost": 2400,
+    "adjacencies": ["NL24"]
+    
+}
+###
+GET http://localhost:8000/api/items
+###
+
+GET http://localhost:8000/api/items/Novice Cleets
+###
+
+POST http://localhost:8000/api/items
+Content-Type: application/json
+
+{
+    "name": "Novice Cleets",
+    "type": "Magic",
+    "set": "Novice",
+    "slot": "Footwear",
+    "description": "They're boots... I mean... They're Magic Boots!!! (They're just boots)",
+    "cp": 2,
+    "cost": 45
+}

@@ -1,0 +1,12 @@
+@host=http://localhost:8000
+
+
+POST {{host}}/api/profiles
+Content-Type: application/json
+
+{
+    "name": "Nintenoble",
+    "lowerName": "nintenoble",
+    "twitchUsername": "nintenoble",
+    "twitchid": "411590212"
+}
